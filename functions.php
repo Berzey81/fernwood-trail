@@ -14,13 +14,13 @@ function fernwood_trail_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'fernwood_trail_enqueue_styles' );
 
-//Register navigation menu
+// Register navigation menu
 function fernwood_trail_register_menus() {
     register_nav_menus(
         array(
-            'priamry' => 'Primary Menu',
+            'primary' => 'Primary Menu',
         )
     );
 }
 
-add_action('after_setup_theme', 'fernwood_trail_register_menus');
+add_action( 'after_setup_theme', 'fernwood_trail_register_menus' );

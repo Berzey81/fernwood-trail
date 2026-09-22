@@ -11,4 +11,12 @@
 
 <header>
     <h1>Fernwood Trail Co.</h1>
+
+    <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'primary'
+        )
+    )
+    ?>
 </header>
