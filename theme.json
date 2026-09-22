@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        {
+          "slug": "forest",
+          "color": "#2F4F3E",
+          "name": "Forest"
+        },
+        {
+          "slug": "moss",
+          "color": "#7A8B6F",
+          "name": "Moss"
+        },
+        {
+          "slug": "cream",
+          "color": "#F5F1E8",
+          "name": "Cream"
+        },
+        {
+          "slug": "charcoal",
+          "color": "#252525",
+          "name": "Charcoal"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Georgia, serif",
+          "slug": "heading-font",
+          "name": "Heading Font"
+        }
+      ]
+    }
+  }
+}

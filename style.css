@@ -1,0 +1,25 @@
+/*
+Theme Name: Fernwood Trail Co.
+Theme URI: http://fernwood-trail-co.local
+Author: Amber
+Description: A custom WordPress theme built for learning WordPress theme development.
+Version: 1.0
+*/
+
+body {
+  background-color: #f5f1e8;
+  color: #252525;
+  font-family: Georgia, serif;
+}
+
+header {
+  background-color: #2f4f3e;
+  color: #f5f1e8;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #2f4f3e;
+  color: #f5f1e8;
+  padding: 2rem;
+}
