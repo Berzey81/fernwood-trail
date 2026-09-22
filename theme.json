@@ -6,33 +6,58 @@
     "color": {
       "palette": [
         {
-          "slug": "forest",
-          "color": "#2F4F3E",
-          "name": "Forest"
+          "slug": "pine",
+          "color": "#1F3B2C",
+          "name": "Pine"
         },
         {
-          "slug": "moss",
-          "color": "#7A8B6F",
-          "name": "Moss"
+          "slug": "pine-deep",
+          "color": "#152A20",
+          "name": "Pine Deep"
         },
         {
-          "slug": "cream",
-          "color": "#F5F1E8",
-          "name": "Cream"
+          "slug": "brass",
+          "color": "#B08D57",
+          "name": "Brass"
         },
         {
-          "slug": "charcoal",
-          "color": "#252525",
-          "name": "Charcoal"
+          "slug": "stone",
+          "color": "#EDE7DD",
+          "name": "Stone"
+        },
+        {
+          "slug": "stone-dim",
+          "color": "#E1DACB",
+          "name": "Stone Dim"
+        },
+        {
+          "slug": "ink",
+          "color": "#241F1A",
+          "name": "Ink"
+        },
+        {
+          "slug": "rust",
+          "color": "#A64B3A",
+          "name": "Rust"
         }
       ]
     },
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "Georgia, serif",
-          "slug": "heading-font",
-          "name": "Heading Font"
+          "fontFamily": "Inter, sans-serif",
+          "slug": "body",
+          "name": "Inter"
+        },
+        {
+          "fontFamily": "Fraunces, serif",
+          "slug": "display",
+          "name": "Fraunces"
+        },
+        {
+          "fontFamily": "JetBrains Mono, monospace",
+          "slug": "mono",
+          "name": "JetBrains Mono"
         }
       ]
     }
