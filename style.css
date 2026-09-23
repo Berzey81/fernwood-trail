@@ -24,3 +24,18 @@ footer {
   color: #ede7dd;
   padding: 2rem;
 }
+
+/* Buttons */
+.wp-block-button_link {
+  background-color: #b08d57;
+  color: #152a20;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.wp-block-button_link:hover {
+  background-color: #a64b3a;
+  color: #ede7dd;
+}
