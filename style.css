@@ -16,7 +16,39 @@ body {
 header {
   background-color: #1f3b2c;
   color: #ede7dd;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.75rem;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu a {
+    color: #EDE7DD;
+    text-decoration: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+header .menu a:hover {
+    color: #B08D57;
 }
 
 footer {
@@ -26,7 +58,7 @@ footer {
 }
 
 /* Buttons */
-.wp-block-button_link {
+.fernwood-hero .wp-block-button__link {
   background-color: #b08d57;
   color: #152a20;
   padding: 0.75rem 1.5rem;
@@ -35,7 +67,34 @@ footer {
   display: inline-block;
 }
 
-.wp-block-button_link:hover {
+.fernwood-hero .wp-block-button__link:hover {
   background-color: #a64b3a;
   color: #ede7dd;
+}
+
+.fernwood-hero .wp-block-buttons {
+  justify-content: center;
+}
+
+/* Hero */
+.fernwood-hero {
+  background-color: #1f3b2c;
+  color: #ede7dd;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.fernwood-hero h1 {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.05;
+}
+
+.fernwood-hero-text {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }

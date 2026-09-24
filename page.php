@@ -2,17 +2,21 @@
 
 <main>
     <?php
-    while (have_posts()) :
+    while ( have_posts() ) :
         the_post();
         ?>
 
         <article>
-            <h1>
-                <?php the_title(); ?>
-            </h1>
-            <?php the_content (); ?>
+
+            <?php if ( ! is_front_page() ) : ?>
+                <h1><?php the_title(); ?></h1>
+            <?php endif; ?>
+
+            <?php the_content(); ?>
+
         </article>
-        <?php endwhile; ?>
+
+    <?php endwhile; ?>
 </main>
 
-<?php get_footer (); ?>
+<?php get_footer(); ?>
