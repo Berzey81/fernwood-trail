@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "fernwood/stat-callout",
+	"version": "0.1.0",
+	"title": "Stat Callout",
+	"category": "widgets",
+	"icon": "chart-bar",
+	"description": "Display reusable statistics in a customizable callout.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "fernwood-trail",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
