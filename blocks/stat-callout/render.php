@@ -9,7 +9,20 @@
  *
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
+
+$stats = $attributes['stats'] ?? [];
 ?>
-<p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( 'Stat Callout – hello from a dynamic block!', 'fernwood-trail' ); ?>
-</p>
+
+<div <?php echo get_block_wrapper_attributes(); ?>>
+	<?php foreach ( $stats as $stat ) : ?>
+		<div class="stat-callout__item">
+			<strong class="stat-callout__number">
+				<?php echo esc_html( $stat['number'] ?? '' ); ?>
+			</strong>
+
+			<span class="stat-callout__label">
+				<?php echo esc_html( $stat['label'] ?? '' ); ?>
+			</span>
+		</div>
+	<?php endforeach; ?>
+</div>

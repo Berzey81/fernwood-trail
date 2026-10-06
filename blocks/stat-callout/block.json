@@ -1,20 +1,43 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "fernwood/stat-callout",
-	"version": "0.1.0",
-	"title": "Stat Callout",
-	"category": "widgets",
-	"icon": "chart-bar",
-	"description": "Display reusable statistics in a customizable callout.",
-	"example": {},
-	"supports": {
-		"html": false
-	},
-	"textdomain": "fernwood-trail",
-	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"render": "file:./render.php",
-	"viewScript": "file:./view.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "fernwood/stat-callout",
+  "version": "0.1.0",
+  "title": "Stat Callout",
+  "category": "widgets",
+  "icon": "chart-bar",
+  "description": "Display reusable statistics in a customizable callout.",
+  "example": {},
+  "attributes": {
+    "stats": {
+      "type": "array",
+      "default": [
+        {
+          "number": "1,200+",
+          "label": "Miles Guided"
+        },
+        {
+          "number": "38",
+          "label": "Routes Mapped"
+        },
+        {
+          "number": "11",
+          "label": "Years Running"
+        },
+        {
+          "number": "97%",
+          "label": "Guest Return Rate"
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fernwood-trail",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
 }
