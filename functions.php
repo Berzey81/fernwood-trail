@@ -24,3 +24,10 @@ function fernwood_trail_register_menus() {
 }
 
 add_action( 'after_setup_theme', 'fernwood_trail_register_menus' );
+
+//Register the Stat Callout block
+function fernwood_trail_register_stat_callout_block() {
+    register_block_type( get_template_directory() . '/build/blocks/stat-callout' );
+}
+
+add_action( 'init', 'fernwood_trail_register_stat_callout_block' );

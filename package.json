@@ -1,0 +1,15 @@
+{
+  "name": "fernwood-trail",
+  "version": "1.0.0",
+  "description": "A custom WordPress theme created as a learning project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build --source-path=blocks --output-path=build/blocks"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^35.0.0"
+  }
+}
