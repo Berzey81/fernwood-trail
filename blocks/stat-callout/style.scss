@@ -6,7 +6,46 @@
  */
 
 .wp-block-fernwood-stat-callout {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+  background-color: #152a20;
+  color: #ede7dd;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
 }
+
+.stat-callout__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-callout__number {
+  color: #b08d57;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.stat-callout__label {
+  color: #ede7dd;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.88rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .wp-block-fernwood-stat-callout {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .stat-callout__label {
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+  }
+}
+
